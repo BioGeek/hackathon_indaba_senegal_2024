@@ -1,0 +1,29 @@
+[project]
+name = "hackathon-indaba-senegal-2024"
+version = "0.1.0"
+description = "Deep Learning Indaba hacakthon"
+authors = [
+    { name = "Jeroen Van Goey", email = "j.vangoey@instadeep.com" }
+]
+dependencies = [
+    "instanovo>=0.1.7",
+    "pre-commit>=3.7.1",
+    "ipykernel>=6.29.5",
+    "pip>=24.1.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hackathon_indaba_senegal_2024"]
