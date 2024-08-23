@@ -11,9 +11,10 @@ dependencies = [
     "ipykernel>=6.29.5",
     "pip>=24.1.2",
     "jupyter>=1.0.0",
+    "koinapy>=0.0.6",
 ]
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.10"
 
 [build-system]
 requires = ["hatchling"]

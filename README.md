@@ -3,6 +3,10 @@
 To install dependencies, run:
 
 ```bash
-make install
-make sync
+# install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+uv init
+uv sync
+
 ```
