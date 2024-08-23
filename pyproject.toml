@@ -5,11 +5,13 @@ description = "Deep Learning Indaba hacakthon"
 authors = [
     { name = "Jeroen Van Goey", email = "j.vangoey@instadeep.com" }
 ]
+
+readme = "README.md"
+requires-python = ">=3.10"
 dependencies = [
     "instanovo>=0.1.7",
-    "pre-commit>=3.7.1",
+    "pre-commit>=3.8.0",
     "ipykernel>=6.29.5",
-    "pip>=24.1.2",
     "jupyter>=1.0.0",
     "koinapy>=0.0.6",
 ]
@@ -19,13 +21,3 @@ requires-python = ">= 3.10"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.rye]
-managed = true
-dev-dependencies = []
-
-[tool.hatch.metadata]
-allow-direct-references = true
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/hackathon_indaba_senegal_2024"]
